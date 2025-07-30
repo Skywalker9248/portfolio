@@ -24,3 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes starShift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.stars-bg {
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: starShift 120s linear infinite;
+  opacity: 0.7;
+  pointer-events: none;
+}
