@@ -29,6 +29,7 @@ export default function Home() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const onScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
@@ -112,7 +113,7 @@ export default function Home() {
                 className="group bg-gray-800 text-gray-100 px-4 py-3 rounded flex justify-between items-center shadow hover:bg-gray-700 transition"
               >
                 <span className="text-sm">{skill.name}</span>
-                <span className="text-gray-300 transition-transform duration-500 group-hover:rotate-[360deg]">
+                <span className="text-gray-300 transition-transform duration-300 group-hover:scale-150">
                   {skill.icon}
                 </span>
               </div>

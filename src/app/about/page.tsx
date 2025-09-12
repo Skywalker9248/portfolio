@@ -30,6 +30,8 @@ export default function AboutPage() {
             "REST API",
             "Tailwind CSS",
             "Bootstrap",
+            "Styled Components",
+            "GitHub",
             "Material UI",
           ].map((skill, i) => (
             <span
@@ -102,7 +104,7 @@ export default function AboutPage() {
             for student innovations.
           </li>
           <li>
-            ☁️ I’m actively exploring <strong>AWS</strong> and have practical
+            ☁️ I’m actively exploring <strong>Cloud Technologies</strong> and have practical
             experience with <strong>Docker</strong> for containerized dev &
             deployment workflows.
           </li>
