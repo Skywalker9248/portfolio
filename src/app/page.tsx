@@ -30,8 +30,14 @@ export default function Home() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    let lastScrollY = window.scrollY;
     const onScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      if (window.scrollY > 10 && window.scrollY > lastScrollY) {
+        setIsScrolled(true);
+      } else if (window.scrollY <= 180 && window.scrollY < lastScrollY) {
+        setIsScrolled(false);
+      }
+      lastScrollY = window.scrollY;
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -74,7 +80,7 @@ export default function Home() {
                     My Profile
                   </button>
                   <a
-                    href="/resume.pdf"
+                    href="/ron-sunny.pdf"
                     className="border border-white text-white px-6 py-2 rounded hover:bg-white hover:text-black transition"
                     download
                   >
