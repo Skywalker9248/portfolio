@@ -37,7 +37,7 @@ const projects: Project[] = [
       "A simple calculator app built with React to show consistency in building small utilities.",
     tech: ["React", "CSS"],
     github: "https://github.com/Skywalker9248/ReactCalc",
-    demo: "http://react-calc-delta.vercel.app/",
+    demo: "https://reactcalc-alpha.vercel.app/",
     featured: false,
   },
 ];
