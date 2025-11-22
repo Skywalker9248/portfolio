@@ -14,6 +14,23 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "F1 Dashboard",
+    description:
+      "A F1 dashboard app built with React + TypeScript + Node.js. Fetches data from the F1 API and displays it in a dashboard.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "F1 API",
+      "Apcahe ECharts",
+      "Material UI",
+      "Styled Components",
+    ],
+    github: "https://github.com/Skywalker9248/f1-dashboard",
+    demo: "https://f1-dashboard-blue.vercel.app/",
+    featured: false,
+  },
+  {
     title: "Habit Calendar Tracker",
     description:
       "React + Firebase app for daily habit tracking with streaks, charts, and a color-coded calendar. Authentication via Google Login.",
@@ -56,7 +73,9 @@ const ProjectsPage: React.FC = () => {
             className="mb-16 p-6 border rounded-xl shadow-lg bg-white dark:bg-gray-900 hover:shadow-2xl hover:scale-[1.01] transition-all duration-300"
           >
             {project.image && (
-              <div className="mb-4 max-w-[300px] mx-auto"> {/* Added container with max width */}
+              <div className="mb-4 max-w-[300px] mx-auto">
+                {" "}
+                {/* Added container with max width */}
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -110,7 +129,9 @@ const ProjectsPage: React.FC = () => {
               className="p-5 border rounded-xl shadow-md bg-white dark:bg-gray-900 hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
             >
               {project.image && (
-                <div className="mb-3 max-w-[200px] mx-auto"> {/* Added container with max width */}
+                <div className="mb-3 max-w-[200px] mx-auto">
+                  {" "}
+                  {/* Added container with max width */}
                   <Image
                     src={project.image}
                     alt={project.title}
